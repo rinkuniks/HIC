@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="owner.hostelincity.com">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:hardwareAccelerated="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:largeHeap="true"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
+        <activity
+                android:name=".ui.OtpVerify"
+                android:label="@string/title_activity_otp_verify"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ui.MyBookings"
+                android:label="@string/title_activity_my_bookings"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ui.MyHostels"
+                android:label="@string/title_activity_my_hostels"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ui.UpdatePassword"
+                android:label="@string/title_activity_update_password"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ui.OtpScreen"
+                android:label="@string/title_activity_otp_screen"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".ui.LoginActivity"
+                android:label="@string/title_activity_login"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ui.MainActivity"
+                android:label="@string/title_activity_main"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ui.SignUpActivity"
+                android:label="@string/title_activity_sign_up"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ui.ForgotPassword"
+                android:label="@string/title_activity_forgot_password"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>

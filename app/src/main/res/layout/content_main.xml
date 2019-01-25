@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".ui.MainActivity"
+        tools:showIn="@layout/app_bar_main">
+    <RelativeLayout
+            android:id="@+id/header_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="@string/todo"
+                android:src="@color/redcolor"
+                android:scaleType="fitXY"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="bottom"
+                android:textStyle="normal"
+                android:textColor="#FFF"
+                android:textSize="22sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:text="Welcome"
+                android:layout_alignParentTop="true"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#FFF"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:id="@+id/dashboardUsername"
+                android:text="Mokshith Reddy"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="100dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_below="@+id/header_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/dashBoardRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+</RelativeLayout>

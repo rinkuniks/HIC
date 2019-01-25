@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/hostelImage"
+                    android:background="@color/blackcolor"
+                    android:layout_height="100dp"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Sri Sai Mens Delux Hostel"
+                    android:textSize="22sp"
+                    android:id="@+id/hostelNameText"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="45dp"
+                    android:textSize="15sp"
+                    android:id="@+id/hostelLocation"
+                    android:text="Madhapur, Hyderabad"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="15sp"
+                    android:text="View"
+                    android:layout_height="20dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="155dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="15sp"
+                    android:text="58"
+                    android:id="@+id/hostelViewNoCount"
+                    android:textColor="@color/redcolor"
+                    android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="80dp"
+                android:textSize="15sp"
+                android:text="Bookings"
+                android:layout_height="20dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="265dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="15sp"
+                    android:text="5"
+                    android:id="@+id/hostelBookingCount"
+                    android:textColor="@color/redcolor"
+                    android:layout_height="20dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="15sp"
+                    android:text="Enquiry"
+                    android:layout_height="20dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="350dp"
+                    android:layout_marginTop="80dp"
+                    android:textSize="15sp"
+                    android:text="10"
+                    android:id="@+id/hostelEnquiryCount"
+                    android:textColor="@color/redcolor"
+                    android:layout_height="20dp"/>
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/whitecolor"
+                    android:background="@color/redcolor"
+                    android:padding="10dp"
+                    android:layout_below="@+id/hostelImage"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="15sp"
+                    android:id="@+id/updateShareInfo"
+                    android:text="Update Sharing Info"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
